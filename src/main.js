@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import 'font-awesome/css/font-awesome.css';
+import router from './routes/index';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(router); // Use the router in the app
+
+app.mount('#app'); // Mount the app once
