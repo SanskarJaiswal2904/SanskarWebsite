@@ -4,7 +4,7 @@
       <div class="footer-content">
         <div class="footer-logo">© 2024 by Sanskar Jaiswal</div>
         <div class="footer-links">
-          <router-link to="/" title="Home" target="_main">Home</router-link>
+          <router-link to="/" title="Home" target="_main" style="font-weight: bold;">Home</router-link>
           <a href="javascript:void(0);" @click="showWarning">
             Blog
           </a>
@@ -28,8 +28,21 @@
         </div>
 
         <div class="footer-text">
-          <p>Total Visitors: <span>{{ counter }}</span></p>
+          <!-- <p>Total Visitors: <span>{{ counter }}</span></p> -->
         </div>
+      </div>
+      <div class="icon-holder">
+      <p>Built with  :  </p>
+    <div class="icons">
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <i class="fa-brands fa-html5" title="HTML5" style="color: #E34F26; margin-left: 20px;"></i>
+        <i class="fa-brands fa-css3" title="CSS3" style="color: #1572B6;"></i>
+        <i class="fa-brands fa-js" title="JavaScript (ES6+)" style="color: #F7DF1E;"></i>
+        <i class="fa-brands fa-vuejs" title="Vue.js" style="color: #42B883;"></i>
+        <i class="fa-solid fa-leaf" title="MongoDB" style="color: #47A248;"></i>
+      </div>
+      
+    </div>
       </div>
     </footer>
   </div>
@@ -77,6 +90,21 @@ export default {
 
   
   <style scoped>
+  .icon-holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+
   .footer {
     background: linear-gradient(90deg, #333, #555, #777);
     color: #fff;
