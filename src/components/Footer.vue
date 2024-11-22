@@ -44,7 +44,7 @@ export default {
     const showWarning = () => {
         alert("This site is under construction.");
   };
-    const counter = ref(0);
+    const counter = ref(78);
 
     onMounted(() => {
       const now = new Date();
