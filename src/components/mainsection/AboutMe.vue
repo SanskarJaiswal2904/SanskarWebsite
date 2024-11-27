@@ -1,6 +1,7 @@
 <template>
     <div class="aboutme">
-        <div class="aboutAuthor">
+      <div class="aboutAuthor">
+          <img id="gif-image" src="../../assets/flowers3.gif" style="display: block; margin: auto; height: 320px; margin-top: 40px">
             <h1>HELLO</h1>
             <div class="container">
               <img src="../../assets/sanskar4.png" alt="author.png" />
