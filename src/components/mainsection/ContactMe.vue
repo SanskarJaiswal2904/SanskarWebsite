@@ -12,6 +12,7 @@
               </h2>
             </a>
           </div>
+          <img id="gif-image" src="../../assets/flowers4-unscreen.gif" style="display: block; margin: auto; height: 520px; margin-top: 40px">
     </div>
 </template>
 

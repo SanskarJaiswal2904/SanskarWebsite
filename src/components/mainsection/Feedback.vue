@@ -1,6 +1,6 @@
 <template>
     <div class="feedback">
-        <div class="aboutAuthor" style="margin-top: 200px; margin-bottom: 5px">
+        <div class="aboutAuthor" style="margin-top: 125px; margin-bottom: 5px">
             <h1>COLLEGUE FEEDBACK</h1>
           </div>
     

@@ -2,6 +2,16 @@
   <div>
     <footer class="footer">
       <div class="footer-content">
+
+        <div style="margin-bottom: 10px;" title="Top of the Page">
+          <button class="upload-button" @click="scrollToTop">
+              <i class="fas fa-angle-double-up"></i>
+          </button>
+      </div>
+      
+      
+
+
         <div class="footer-logo">© 2024 by Sanskar Jaiswal</div>
         <div class="footer-links">
           <router-link to="/" title="Home" target="_main" style="font-weight: bold;">Home</router-link>
@@ -32,7 +42,7 @@
         </div>
       </div>
       <div class="icon-holder">
-      <p>Built with  :  </p>
+      <p>This Website is built with  :  </p>
     <div class="icons">
       <div style="display: flex; align-items: center; gap: 20px;">
         <i class="fa-brands fa-html5" title="HTML5" style="color: #E34F26; margin-left: 20px;"></i>
@@ -52,12 +62,17 @@
 import { ref, onMounted } from 'vue';
 
 export default {
-  name: 'footer-item',
+  name: 'FooterItem',
   setup() {
-    const showWarning = () => {
-        alert("This site is under construction.");
-  };
     const counter = ref(78);
+
+    const showWarning = () => {
+      alert("This site is under construction.");
+    };
+
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     onMounted(() => {
       const now = new Date();
@@ -72,24 +87,55 @@ export default {
 
       // Make API call to update the global visit count on the server
       fetch('/api/increment-counter', { method: 'POST' })
-        .then(response => response.json())
-        .then(data => {
-          counter.value = data.count;  // Update the counter with the response from the server
+        .then((response) => response.json())
+        .then((data) => {
+          counter.value = data.count; // Update the counter with the response from the server
         });
 
       // Update the local counter in Vue
       counter.value = count;
     });
 
-    return { counter, showWarning };
+    // Ensure the scrollToTop function is returned so it can be used in the template
+    return { counter, showWarning, scrollToTop };
   },
 };
 </script>
 
 
-
   
-  <style scoped>
+<style scoped>
+.upload-button {
+  background: linear-gradient(90deg, #555, #777, #999);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.upload-button i {
+  font-size: 1.5rem;
+}
+
+.upload-button:hover {
+  background: linear-gradient(90deg, #777, #999, #bbb);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.upload-button:active {
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
   .icon-holder{
     display: flex;
     flex-direction: row;

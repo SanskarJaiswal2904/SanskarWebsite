@@ -2,13 +2,14 @@
     <div class="aboutme">
       <div class="aboutAuthor">
           <img id="gif-image" src="../../assets/flowers3.gif" style="display: block; margin: auto; height: 320px; margin-top: 40px">
-            <h1>HELLO</h1>
+            <h1 style="margin-top: 80px">HELLO</h1>
             <div class="container">
               <img src="../../assets/sanskar4.png" alt="author.png" />
               <div class="vertical-line"></div>
               <img src="../../assets/sanskarIntro.jpeg" alt="author.png" />
             </div>
           </div>
+          
     </div>
 </template>
 

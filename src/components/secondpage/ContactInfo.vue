@@ -2,7 +2,11 @@
   <NavBar />
   <div class="contactinfo">
     <main>
-        <div class="aboutAuthor" style="margin-bottom: 5px; margin-top: 105px">
+
+      <img id="gif-image" src="../../assets/flowers5-unscreen.gif" style="display: block; margin: auto; height: 480px; margin-top: 80px">
+      
+      
+        <div class="aboutAuthor" style="margin-bottom: 5px; margin-top: 30px">
           <a
             href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=sanskarjaiswal2904@gmail.com&tf=1"
             target="_main"
@@ -14,6 +18,7 @@
             </h2>
           </a>
         </div>
+
   
         <div class="containerCM" style="margin: 20px">
           <a
@@ -32,7 +37,7 @@
 
           <a
           href="https://drive.google.com/file/d/1O4ICVbmcropuegUIxsD5naIlZcYsbns5/view?usp=drive_link"
-          class=" glow-on-hover"
+          class=" big-button glow-without-hover"
           target="_main"
         >
           <i class="far fa-file-pdf iconCM"></i> Resume
@@ -46,6 +51,8 @@
         </div>
       </main>
   
+      <img id="gif-image" src="../../assets/flowers2-unscreen.gif" style="display: block; margin: auto; height: 480px; margin-top: 20px">
+      
 
    </div>
    <Footer />
@@ -125,56 +132,33 @@
     margin-right: 10px; /* Adjust margin to space the icon from the button text */
 }
 
-  /*-------------------------------------Glow Button-------------------------------------*/
-  .glow-on-hover {
-    width: 90%;
-    padding: 25px;
-    font-size: 24px;
-    background: linear-gradient(135deg, #3b5998, #8b9dc3); /* A professional blue gradient */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #3b5998;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+.glow-without-hover {
+  position: relative;
+  display: inline-block;
 }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 1; /* Ensure opacity is always 1 for the glowing effect */
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-
-
-.glow-on-hover:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+.glow-without-hover:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  filter: blur(5px);
+  border-radius: inherit;
+  animation: glowing 20s linear infinite;
+  z-index: -1;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
+
+  
 
   </style>
   
