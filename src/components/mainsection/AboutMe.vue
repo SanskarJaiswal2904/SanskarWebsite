@@ -3,10 +3,10 @@
       <div class="aboutAuthor">
           <img id="gif-image" src="../../assets/flowers3.gif" style="display: block; margin: auto; height: 320px; margin-top: 40px">
             <h1 style="margin-top: 80px">HELLO</h1>
-            <div class="container">
-              <img src="../../assets/sanskar4.png" alt="author.png" />
+            <div class="container image-container">
+              <img src="../../assets/sanskar4.png" class="responsive-image" alt="author.png" />
               <div class="vertical-line"></div>
-              <img src="../../assets/sanskarIntro.jpeg" alt="author.png" />
+              <img src="../../assets/sanskarIntro.jpeg" class="responsive-image" alt="author.png" />
             </div>
           </div>
           
@@ -26,6 +26,74 @@
 
   <style scoped>
 
+  .responsive-image {
+    width: 460px; /* Default for desktop */
+    height: 550px;
+  }
+  
+  /* Media queries for different device sizes */
+  @media screen and (max-width: 1280px) {
+    .responsive-image {
+      width: 500px; /* Default for desktop */
+      height: 610px;
+    }
+    .image-container {
+      margin-top: 90px;
+    }  
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .responsive-image {
+      width: 450px;
+      height: 600px;
+    }
+    .image-container {
+      margin-top: 95px;
+    }  
+  
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .responsive-image {
+      width: 400px;
+      height: 500px;
+    }
+    .image-container {
+      margin-top: 99px;
+    }  
+  }
+  
+  @media screen and (max-width: 480px) {
+    .responsive-image {
+      width: 350px;
+      height: 250px;
+    }
+    .image-container {
+      margin-top: 102px;
+    }  
+  }
+
+  @media screen and (max-width: 360px) {
+    .responsive-image {
+      width: 280px;
+      height: 150px;
+    }
+    .image-container {
+      margin-top: 102px;
+    }  
+  }
+
+  @media screen and (max-width: 240px) {
+    .responsive-image {
+      width: 220px;
+      height: 140px;
+    }
+    .image-container {
+      margin-top: 102px;
+    }  
+  }
+
   .aboutAuthor{
     font-style: italic;
     font-size: larger;
@@ -42,11 +110,6 @@
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-}
-
-.container img{
-    width: 400px;
-    height: auto;
 }
 
 
