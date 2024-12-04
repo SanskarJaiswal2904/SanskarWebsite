@@ -41,6 +41,16 @@
       margin-top: 90px;
     }  
   }
+
+  @media screen and (max-width: 1150px) {
+    .responsive-image {
+      width: 480px;
+      height: 600px;
+    }
+    .image-container {
+      margin-top: 90px;
+    }  
+  }
   
   @media screen and (max-width: 1024px) {
     .responsive-image {

@@ -39,10 +39,20 @@ export default defineComponent({
 }
 
 /* Media queries for different device sizes */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .responsive-image {
     width: 1150px;
     height: 300px;
+  }
+  .image-container {
+    margin-top: 90px;
+  }  
+}
+
+@media screen and (max-width: 1150px) {
+  .responsive-image {
+    width: 900px;
+    height: 680px;
   }
   .image-container {
     margin-top: 90px;
