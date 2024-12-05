@@ -34,7 +34,7 @@
         </div>
 
         <div class="footer-text">
-          <p>Total Visitors: <span>{{ counter }}</span></p>
+          <!-- <p>Total Visitors: <span>{{ counter }}</span></p> -->
         </div>
       </div>
       <div class="icon-holder">
