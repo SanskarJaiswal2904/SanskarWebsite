@@ -51,7 +51,7 @@
     </div>
   </div>
   <a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=17775503&style=0018&nbdigits=6&type=ip&initCount=170" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=17775593&style=0006&nbdigits=5&type=ip&initCount=172" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a> 
     </footer>
   </div>
 </template>
