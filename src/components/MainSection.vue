@@ -3,6 +3,7 @@
         <FixedSidebar/>
         <HomeIntro/>
         <AboutMe/>
+        <ProjectsSection/>
         <Feedback/>
         <ContactMe/>
         
@@ -17,6 +18,7 @@ import FixedSidebar from './mainsection/FixedSidebar.vue';
 import AboutMe from './mainsection/AboutMe.vue';
 import Feedback from './mainsection/Feedback.vue';
 import ContactMe from './mainsection/ContactMe.vue';
+import ProjectsSection from './mainsection/Projects.vue';
 
 
 export default defineComponent({
@@ -25,10 +27,9 @@ export default defineComponent({
     HomeIntro,
     FixedSidebar,
     AboutMe,
+    ProjectsSection,
     Feedback,
     ContactMe,
-    
-
 
   },
   setup() {

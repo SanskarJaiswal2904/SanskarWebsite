@@ -130,7 +130,8 @@
   height: 620px;
   border-left: 2px dotted rgb(127, 122, 122);
   position: relative;
-  z-index: 0;
+  z-index: -1;
+
 }
 
 .vertical-line::after {
