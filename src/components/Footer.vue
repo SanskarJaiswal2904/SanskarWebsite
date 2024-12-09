@@ -34,11 +34,11 @@
         </div>
 
         <div class="footer-text">
-          <!-- <p>Total Visitors: <span>{{ counter }}</span></p> -->
+          <p>Total Visitors: <span>{{ counter }}</span></p>
         </div>
       </div>
       <div class="icon-holder">
-      <p>This Website is built with  :  </p>
+      <p>This website is built with  :  </p>
     <div class="icons">
       <div style="display: flex; align-items: center; gap: 20px;">
         <i class="fa-brands fa-html5" title="HTML5" style="color: #E34F26; margin-left: 20px;"></i>
@@ -56,54 +56,51 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import axios from 'axios';
+import { ref, onMounted } from "vue";
+import axios from "axios";
 
 export default {
-  name: 'FooterItem',
+  name: "FooterItem",
   setup() {
-    const counter = ref(78);
+    const counter = ref(0); // Initialize counter with 0
 
     const showWarning = () => {
       alert("This site is under construction.");
     };
 
     const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    
+    const updateLocalStorage = (now) => {
+      localStorage.setItem("lastVisit", now.toString());
+    };
+
     onMounted(() => {
       const now = new Date();
       const lastVisit = localStorage.getItem("lastVisit");
-      let count = parseInt(localStorage.getItem("counter")) || 78;
-
       const lastVisitDate = new Date(lastVisit);
-      const is24HoursPassed = !lastVisit || (now - lastVisitDate) > 24 * 60 * 60 * 1000;
+      const is24HoursPassed = !lastVisit || now - lastVisitDate > 24 * 60 * 60 * 1000;
 
       // Fetch the total visit count from the server
       axios
-        .get('/api/get-counter')
+        .get(`${process.env.VUE_APP_BACKEND_SERVER}/api/get-counter`)
         .then((response) => {
           counter.value = response.data.count; // Update counter from server
         })
         .catch((error) => {
           console.error("Error fetching counter from server:", error);
-          counter.value = count
+          counter.value = "N/A"; // Fallback value
         });
 
+      // Increment counter if 24 hours have passed
       if (is24HoursPassed) {
-        count++;
-        localStorage.setItem("counter", count);
-        localStorage.setItem("lastVisit", now.toString());
-        console.log("Counter Updated");
-
-        // Make API call to update the global visit count on the server
         axios
-          .post('/api/increment-counter')
+          .post(`${process.env.VUE_APP_BACKEND_SERVER}/api/increment-counter`)
           .then((response) => {
-            counter.value = response.data.count; // Update the counter with the response from the server
-            console.log("Counter Updated on server");
+            counter.value = response.data.count; // Update counter from server after increment
+            updateLocalStorage(now);
+            console.log("Counter updated on the server");
           })
           .catch((error) => {
             console.error("Error updating counter on server:", error);
@@ -111,14 +108,12 @@ export default {
       }
     });
 
-    // Ensure the scrollToTop function is returned so it can be used in the template
     return { counter, showWarning, scrollToTop };
   },
 };
 </script>
 
 
-  
 <style scoped>
 .upload-button {
   background: linear-gradient(90deg, #555, #777, #999);

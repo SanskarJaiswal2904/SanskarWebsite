@@ -160,8 +160,8 @@
     }
     
     .project-image {
-      width: 40%;
-      height: 40%;
+      width: 20%;
+      height: 20%;
       border-radius: 10px;
       margin: 0 15px;
       transition: transform 0.4s ease, filter 0.4s ease;

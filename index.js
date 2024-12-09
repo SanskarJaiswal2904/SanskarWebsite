@@ -1,55 +1,76 @@
-require('dotenv').config(); // Load environment variables from .env file
-const { MongoClient } = require("mongodb");
+require('dotenv').config();
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-// Access MongoDB URI from the .env file
-const uri = process.env.MONGO_URI;
-const client = new MongoClient(uri);
+const app = express();
+app.use(cors());
 
-async function updateVisitCount() {
+// Middleware
+app.use(bodyParser.json());
+
+// MongoDB Connection
+const mongoURI = process.env.MONGO_URI;
+mongoose
+  .connect(mongoURI)
+  .then(() => console.log('MongoDB connected'))
+  .catch((err) => console.error('MongoDB connection error:', err));
+
+// Mongoose Schema and Model
+const CounterSchema = new mongoose.Schema({
+  _id: { type: String, default: "website-visit-counter" },
+  count: { type: Number, default: 0 },
+}, { collection: 'total-count' }); // Explicitly specify the collection name
+
+const Counter = mongoose.model('Counter', CounterSchema);
+
+// Initialize Counter Document (if not already created)
+const initializeCounter = async () => {
   try {
-    // Connect to MongoDB
-    await client.connect();
-    console.log("Connected to MongoDB");
-
-    // Access the database and collection
-    const database = client.db("personal-website");
-    const collection = database.collection("total-count");
-
-    // Check if the document exists
-    console.log("Checking if the document exists...");
-    let document = await collection.findOne({ _id: "website-visit-counter" });
-    console.log("Document found:", document);
-
-    if (!document) {
-      console.log("Document does not exist. Creating a new document with count: 108");
-      await collection.insertOne({ _id: "website-visit-counter", count: 108 });
-      document = { count: 108 }; // Simulate the newly inserted document
-    }
-
-    // Increment the count
-    console.log("Incrementing the count...");
-    const updatedDocument = await collection.findOneAndUpdate(
-      { _id: "website-visit-counter" },
-      { $inc: { count: 1 } },
-      { returnDocument: "after" } // Return the document after update
-    );
-
-    // Log the updated document
-    console.log("Updated document after increment:", updatedDocument);
-
-    // Ensure the updated document value exists and is valid
-    if (updatedDocument && updatedDocument.value) {
-      console.log(`Current visit count: ${updatedDocument.value.count}`);
-    } else {
-      console.error("Failed to update the visit count. Document was not updated.");
+    const existingCounter = await Counter.findById("website-visit-counter");
+    if (!existingCounter) {
+      await Counter.create({ _id: "website-visit-counter", count: 0 });
+      console.log('Counter initialized');
     }
   } catch (err) {
-    console.error("Error updating visit count:", err);
-  } finally {
-    // Ensure the client will close when you finish/error
-    await client.close();
+    console.error('Error initializing counter:', err);
   }
-}
+};
+initializeCounter();
 
-// Call the function to test it
-updateVisitCount().catch(console.dir);
+// API to fetch the current counter value
+app.get('/api/get-counter', async (req, res) => {
+  try {
+    const counter = await Counter.findById("website-visit-counter");
+    if (!counter) {
+      return res.status(404).json({ error: 'Counter not found' });
+    }
+    console.log("counter")
+    res.json({ count: counter.count });
+  } catch (err) {
+    console.error('Error fetching counter:', err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// API to increment the counter value
+app.post('/api/increment-counter', async (req, res) => {
+  try {
+    const counter = await Counter.findByIdAndUpdate(
+      "website-visit-counter",
+      { $inc: { count: 1 } },
+      { new: true, upsert: true } // Ensures the document is created if not found
+    );
+    res.json({ count: counter.count });
+  } catch (err) {
+    console.error('Error incrementing counter:', err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// Start the server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
