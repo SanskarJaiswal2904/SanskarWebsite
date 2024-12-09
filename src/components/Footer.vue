@@ -75,7 +75,7 @@ export default {
     const updateLocalStorage = (now) => {
       localStorage.setItem("lastVisit", now.toString());
     };
-
+/*
     onMounted(() => {
       const now = new Date();
       const lastVisit = localStorage.getItem("lastVisit");
@@ -107,7 +107,7 @@ export default {
           });
       }
     });
-
+*/
     return { counter, showWarning, scrollToTop };
   },
 };
