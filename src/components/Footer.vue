@@ -56,8 +56,8 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
-import axios from "axios";
+import { ref } from "vue"; //onMounted
+// import axios from "axios";
 
 export default {
   name: "FooterItem",
@@ -72,9 +72,9 @@ export default {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    const updateLocalStorage = (now) => {
-      localStorage.setItem("lastVisit", now.toString());
-    };
+    // const updateLocalStorage = (now) => {
+    //   localStorage.setItem("lastVisit", now.toString());
+    // };
 /*
     onMounted(() => {
       const now = new Date();
