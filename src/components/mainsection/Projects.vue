@@ -18,8 +18,9 @@
               <p>{{ project.description }}</p>
               <p>{{ project.details }}</p>
               <a :href="project.github" target="_blank" class="github-link" @click.stop>
+                Github
                 <i class="fab fa-github" title="GitHub Repo"></i>
-              </a>
+              </a>              
             </div>
           </a>
         </div>
@@ -71,7 +72,7 @@
   </script>
   
   
-  <style>
+  <style scoped>
   .github-link {
     position: absolute;
     bottom: 10px;
@@ -79,20 +80,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
+    padding: 5px 10px; 
+    background-color: #24292F; 
+    color: white;
+    border-radius: 8px; 
     text-decoration: none;
     font-size: 1.2rem;
     transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .github-link:hover {
-    background-color: #007bff;
-    transform: scale(1.1);
-  }
+}
+
+.github-link:hover {
+  background-image: linear-gradient(45deg, #5b6167, #6e7473, #7f8682, #8f9891, #9faa9f, #aabbb0, #b6c7b8, #c2d3c0, #cddfcd, #d9ebd8);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.github-link i {
+    margin-left: 8px; /* Space between text and icon */
+}
+
   
   .project-card {
     position: relative;
