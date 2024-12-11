@@ -17,9 +17,9 @@
               <h2>{{ project.title }}</h2>
               <p>{{ project.description }}</p>
               <p>{{ project.details }}</p>
-              <a :href="project.github" target="_blank" class="github-link" @click.stop>
+              <a :href="project.github" target="_blank" class="github-link" title="GitHub Repo" @click.stop>
                 Github
-                <i class="fab fa-github" title="GitHub Repo"></i>
+                <i class="fab fa-github"></i>
               </a>              
             </div>
           </a>
