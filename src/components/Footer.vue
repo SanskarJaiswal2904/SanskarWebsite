@@ -47,6 +47,7 @@
         <i class="fa-brands fa-vuejs" title="Vue.js" style="color: #42B883;"></i>
         <i class="fa-brands fa-node-js" title="Node.js" style="color: #8CC84B;"></i>
         <i class="fa-solid fa-leaf" title="MongoDB" style="color: #47A248;"></i>
+        <img src="../assets/triangle.svg" alt="Server Icon" title="Vercel" width="17" height="17">
       </div>
     </div>
   </div>
