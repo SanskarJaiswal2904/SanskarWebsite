@@ -61,40 +61,37 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref, onMounted } from "vue";
 import axios from "axios";
 
-export default {
-  name: "FooterItem",
-  setup() {
-    const counter = ref(0); // Initialize counter with 0
-    const isUpdated = ref(false); // Tracks if the counter is updated
 
-    const showWarning = () => {
-      alert("This site is under construction.");
-    };
+const counter = ref(0); // Initialize counter with 0
+const isUpdated = ref(false); // Tracks if the counter is updated
 
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+const showWarning = () => {
+  alert("This site is under construction.");
+};
 
-    const updateLocalStorage = (now) => {
-      localStorage.setItem("lastVisit", now.toString());
-    };
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
-    onMounted(() => {
-      const now = new Date();
-      const lastVisit = localStorage.getItem("lastVisit");
-      const lastVisitDate = lastVisit ? new Date(lastVisit) : new Date(0); // Default to epoch if not found
-      const is24HoursPassed = !lastVisit || now - lastVisitDate > 24 * 60 * 60 * 1000;
+const updateLocalStorage = (now) => {
+  localStorage.setItem("lastVisit", now.toString());
+};
 
-      const backendServer = process.env.VUE_APP_BACKEND_SERVER;
+onMounted(() => {
+  const now = new Date();
+  const lastVisit = localStorage.getItem("lastVisit");
+  const lastVisitDate = lastVisit ? new Date(lastVisit) : new Date(0); // Default to epoch if not found
+  const is24HoursPassed = !lastVisit || now - lastVisitDate > 24 * 60 * 60 * 1000;
 
-      // Fetch the total visit count from the server
-      axios
-        .get(`${backendServer}/api/get-counter`)
-        .then((response) => {
+  const backendServer = process.env.VUE_APP_BACKEND_SERVER;
+  // Fetch the total visit count from the server
+  axios
+    .get(`${backendServer}/api/get-counter`)
+      .then((response) => {
           counter.value = response.data.count; // Update counter from server
         })
         .catch((error) => {
@@ -103,27 +100,26 @@ export default {
         });
 
       // Increment counter if 24 hours have passed
-      if (is24HoursPassed) {
-        axios
-          .post(`${backendServer}/api/increment-counter`)
-          .then((response) => {
-            counter.value = response.data.count; // Update counter from server after increment
-            updateLocalStorage(now);
-            isUpdated.value = true; // Show the "+1" icon
-            setTimeout(() => {
-              isUpdated.value = false; // Hide icon after 3 minutes
-            }, 3 * 60 * 1000);
-            console.log("Counter updated on the server");
-          })
-          .catch((error) => {
-            console.error("Error updating counter on server:", error);
-          });
-      }
-    });
+  if (is24HoursPassed) {
+    axios
+      .post(`${backendServer}/api/increment-counter`)
+      .then((response) => {
+        counter.value = response.data.count; // Update counter from server after increment
+        updateLocalStorage(now);
+        isUpdated.value = true; // Show the "+1" icon
+        setTimeout(() => {
+          isUpdated.value = false; // Hide icon after 3 minutes
+        }, 3 * 60 * 1000);
+          console.log("Counter updated on the server");
+        })
+      .catch((error) => {
+        console.error("Error updating counter on server:", error);
+      });
+  }
+});
 
-    return { counter, showWarning, scrollToTop };
-  },
-};
+
+
 </script>
 
 
