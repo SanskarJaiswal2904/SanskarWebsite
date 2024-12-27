@@ -3,7 +3,7 @@
     <footer class="footer">
       <div class="footer-content">
 
-        <div style="margin-bottom: 10px;" title="Top of the Page">
+        <div style="margin-bottom: 10px;" title="Back to Top">
           <button class="upload-button" @click="scrollToTop">
               <i class="fas fa-angle-double-up"></i>
           </button>
