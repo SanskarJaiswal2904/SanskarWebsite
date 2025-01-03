@@ -62,6 +62,16 @@
           details:
             'To-Do Pal is a comprehensive task management application combining Flask for backend development, MongoDB for database handling, and Vue.js for the frontend. It supports secure user authentication, full CRUD operations for tasks, and an intuitive interface powered by Pinia state management and Vue Router. The app also includes an admin panel for account management.',
         },
+        {
+        title: 'Low Level Design',
+        description: 'A collection of Java-based Object-Oriented Programming projects.',
+        image: '/projects-logo/LLD-logo.png', 
+        link: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
+        github: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
+        details:
+          'This repository features a series of low-level design implementations for various real-world systems. Each project is built with core OOP principles like encapsulation, inheritance, and polymorphism, demonstrating modular and scalable design patterns. Technologies used include Java, with a focus on clean architecture and SOLID principles. \nProjects: Chess, Elevator, HotelManagementSystem, LoggingFramework, MovieTicketSystem, ParkingLot, RateLimiter, SnakeAndLadder, Splitwise, TicTacToe, VendingMachine.',
+      }
+
       ];
   
       return {
