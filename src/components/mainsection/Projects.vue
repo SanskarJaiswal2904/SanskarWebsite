@@ -69,7 +69,7 @@
         link: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
         github: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
         details:
-          'This repository features a series of low-level design implementations for various real-world systems. Each project is built with core OOP principles like encapsulation, inheritance, and polymorphism, demonstrating modular and scalable design patterns. Technologies used include Java, with a focus on clean architecture and SOLID principles. \nProjects: Chess, Elevator, HotelManagementSystem, LoggingFramework, MovieTicketSystem, ParkingLot, RateLimiter, SnakeAndLadder, Splitwise, TicTacToe, VendingMachine.',
+          'This repository features a series of low-level design implementations for various real-world systems. Each project is built with core OOP principles like encapsulation, inheritance, and polymorphism, demonstrating modular and scalable design patterns. Technologies used include Java, with a focus on clean architecture and SOLID principles. \nProjects: Chess, Elevator, HotelManagementSystem, LoggingFramework, MovieTicketSystem, ParkingLot, RateLimiter, SnakeAndLadder, Splitwise, TicTacToe, VendingMachine, GameArcade.',
       }
 
       ];
