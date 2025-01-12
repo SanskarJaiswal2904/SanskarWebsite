@@ -27,10 +27,10 @@
             <a
               href="https://twitter.com/_Sanskkkkar"
               target="_main"
-              title="Twitter"
+              title="X.com"
             >
               <button class="social-button">
-                <i class="fab fa-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
               </button>
             </a>
     

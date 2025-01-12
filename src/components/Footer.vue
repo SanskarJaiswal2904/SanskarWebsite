@@ -20,7 +20,7 @@
 
         <div class="footer-social">
           <a href="https://www.facebook.com/SansKar.jaiswal.2904" target="_main" title="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com/_Sanskkkkar" target="_main" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://twitter.com/_Sanskkkkar" target="_main" title="X.com"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="https://www.instagram.com/sanskkkkar/?hl=en" target="_main" title="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/sanskkkkar/" target="_main" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           <router-link to="/contactme" target="_main" title="Code"><i class="fas fa-code"></i></router-link>
