@@ -3,6 +3,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require('cors');
+
 
 
 
@@ -10,12 +12,13 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 
-const cors = require('cors');
+// CORS configuration
 app.use(cors({
-    origin: ['http://localhost:8080', 'https://sanskarwebsite.vercel.app'], // Replace with your frontend's URL
-    methods: ['GET', 'POST'], // Allow specific HTTP methods
-    allowedHeaders: ['Content-Type'], // Allow headers
-  }));
+  origin: ['http://localhost:8080', 'https://sanskarwebsite.vercel.app'], // Allow frontend URLs
+  methods: ['GET', 'POST'], // Allow specific HTTP methods
+  allowedHeaders: ['Content-Type'], // Allow specific headers
+  credentials: true, // Optional: If you're sending cookies or auth headers
+}));
   
 // MongoDB Connection
 const mongoURI = process.env.MONGO_URI;
