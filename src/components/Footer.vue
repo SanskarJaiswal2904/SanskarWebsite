@@ -95,7 +95,7 @@ export default {
 
       // Fetch the total visit count from the server
       axios
-        .get(`${backendServer}/api/get-counter`)
+        .get(`${backendServer}/get-counter`)
         .then((response) => {
           counter.value = response.data.count; // Update counter from server
         })
@@ -107,7 +107,7 @@ export default {
       // Increment counter if 24 hours have passed
       if (is24HoursPassed) {
         axios
-          .post(`${backendServer}/api/increment-counter`)
+          .post(`${backendServer}/increment-counter`)
           .then((response) => {
             counter.value = response.data.count; // Update counter from server after increment
             updateLocalStorage(now);
