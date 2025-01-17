@@ -47,7 +47,7 @@ const initializeCounter = async () => {
 initializeCounter();
 
 // API to fetch the current counter value
-app.get('/api/get-counter', async (req, res) => {
+app.get('/api/v1/get-counter', async (req, res) => {
   try {
     const counter = await Counter.findById("website-visit-counter");
     if (!counter) {
@@ -61,7 +61,7 @@ app.get('/api/get-counter', async (req, res) => {
 });
 
 // API to increment the counter value
-app.post('/api/increment-counter', async (req, res) => {
+app.post('/api/v1/increment-counter', async (req, res) => {
   try {
     const counter = await Counter.findByIdAndUpdate(
       "website-visit-counter",
@@ -74,6 +74,35 @@ app.post('/api/increment-counter', async (req, res) => {
     res.status(500).json({ error: 'Server error' });
   }
 });
+
+  app.get('/api/v1/test', (req, res) => {
+  try {
+    // Log the request body to verify incoming data (optional)
+    console.log('Request received:', req.body);
+
+    // Respond with a success message
+    res.status(200).json({
+      success: true,
+      message: 'Test route is working!',
+      data: req.body, // Echoing back the request body
+    });
+  } catch (error) {
+    // Handle any unexpected errors
+    console.error('Error in test route:', error);
+    res.status(500).json({
+      success: false,
+      message: 'An error occurred on the test route',
+    });
+  }
+  });
+
+  app.get('/api/v1/test2', (req, res) => {
+    res.send('Server is in test2');
+  });
+
+  app.get('/', (req, res) => {
+    res.send('Server is live');
+  });
 
 // Start the server
 const PORT = process.env.PORT || 5000;
