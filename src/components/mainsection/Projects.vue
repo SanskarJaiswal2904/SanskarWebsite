@@ -61,16 +61,25 @@
           github: 'https://github.com/SanskarJaiswal2904/To-DO-Pal-new',
           details:
             'To-Do Pal is a comprehensive task management application combining Flask for backend development, MongoDB for database handling, and Vue.js for the frontend. It supports secure user authentication, full CRUD operations for tasks, and an intuitive interface powered by Pinia state management and Vue Router. The app also includes an admin panel for account management.',
-        },
-        {
-        title: 'Low Level Design',
-        description: 'A collection of Java-based Object-Oriented Programming projects.',
-        image: '/projects-logo/LLD-logo.png', 
-        link: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
-        github: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
-        details:
-          'This repository features a series of low-level design implementations for various real-world systems. Each project is built with core OOP principles like encapsulation, inheritance, and polymorphism, demonstrating modular and scalable design patterns. Technologies used include Java, with a focus on clean architecture and SOLID principles. \nProjects: Chess, Elevator, HotelManagementSystem, LoggingFramework, MovieTicketSystem, ParkingLot, RateLimiter, SnakeAndLadder, Splitwise, TicTacToe, VendingMachine, GameArcade.',
-      }
+          },
+          {
+            title: 'Bharat-YT-Playlist Length',
+            description: 'A YouTube playlist analyzer built with React, Node.js, YouTube API and Material-UI.',
+            image: '/projects-logo/YTPlaylist-len.png', 
+            link: 'https://bharat-yt-playlist-length.vercel.app',
+            github: 'https://github.com/SanskarJaiswal2904/Bharat-YT-Playlist-Length',
+            details:
+              'Bharat-YT-Playlist Length is a robust application that allows users to analyze and extract details from YouTube playlists. Built with React for the frontend and Material-UI for styling, the app features a clean and responsive interface. It includes functionality for fetching playlist snippets and content details using Axios, efficient handling of API errors, and dark mode support. The app also leverages regular expressions for playlist ID extraction and provides a visually engaging user experience.',
+          },
+          {
+          title: 'Low Level Design',
+          description: 'A collection of Java-based Object-Oriented Programming projects.',
+          image: '/projects-logo/LLD-logo.png', 
+          link: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
+          github: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
+          details:
+            'This repository features a series of low-level design implementations for various real-world systems. Each project is built with core OOP principles like encapsulation, inheritance, and polymorphism, demonstrating modular and scalable design patterns. Technologies used include Java, with a focus on clean architecture and SOLID principles. \nProjects: Chess, Elevator, HotelManagementSystem, LoggingFramework, MovieTicketSystem, ParkingLot, RateLimiter, SnakeAndLadder, Splitwise, TicTacToe, VendingMachine, GameArcade.',
+          },
 
       ];
   
