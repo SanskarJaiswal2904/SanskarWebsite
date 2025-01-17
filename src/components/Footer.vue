@@ -33,12 +33,7 @@
           © 2024 Sanskar Jaiswal. All rights reserved.
         </div>
 
-        <div class="footer-text" title="Will only update once every 24 hours">
-          <p>
-            Total Visitors: <span>{{ counter }}</span>
-            <i class="fa-solid fa-plus plus-icon" :disabled="!isUpdated"></i>
-          </p>
-        </div>
+
       </div>
       <div class="icon-holder">
       <p>This website is built with  :  </p>
@@ -53,6 +48,12 @@
         <img src="../assets/triangle.svg" alt="Server Icon" title="Vercel" width="17" height="17">
       </div>
     </div>
+  </div>
+  <div class="footer-text" title="Will only update once every 24 hours">
+    <p>
+      Total Visitors: <span>{{ counter }}</span>
+      <i class="fa-solid fa-plus plus-icon" :disabled="!isUpdated"></i>
+    </p>
   </div>
   <!-- <a href="https://www.hitwebcounter.com" target="_blank">
     <img src="https://hitwebcounter.com/counter/counter.php?page=17775593&style=0006&nbdigits=5&type=ip&initCount=172" title="Counter Widget" Alt="Visit counter For Websites"   border="0" />
