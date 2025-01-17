@@ -69,7 +69,7 @@
             link: 'https://bharat-yt-playlist-length.vercel.app',
             github: 'https://github.com/SanskarJaiswal2904/Bharat-YT-Playlist-Length',
             details:
-              'Bharat-YT-Playlist Length is a robust application that allows users to analyze and extract details from YouTube playlists. Built with React for the frontend and Material-UI for styling, the app features a clean and responsive interface. It includes functionality for fetching playlist snippets and content details using Axios, efficient handling of API errors, and dark mode support. The app also leverages regular expressions for playlist ID extraction and provides a visually engaging user experience.',
+              'Bharat-YT-Playlist Length is a robust application that allows users to analyze and extract details from YouTube playlists. It calculates the length of multiple playlist, its\'s average duration, it\'s length with different playback speed, and more. Built with React for the frontend and Material-UI for styling, the app features a clean and responsive interface. It includes functionality for fetching playlist snippets and content details using Axios, efficient handling of API errors, and dark mode support. The app also leverages regular expressions for playlist ID extraction and provides a visually engaging user experience. It also has Dark Mode.',
           },
           {
           title: 'Low Level Design',
@@ -106,6 +106,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 15px;
 }
 
 .github-link:hover {
