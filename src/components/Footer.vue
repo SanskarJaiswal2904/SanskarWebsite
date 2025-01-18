@@ -51,7 +51,7 @@
   </div>
   <div class="footer-text" title="Will only update once every 24 hours">
     <p>
-      Total Visitors: <span>{{ counter }}</span>
+      Total Visitors: <span>{{ counter === 0 ? '346' : counter }}</span>
       <i class="fa-solid fa-plus plus-icon" :disabled="!isUpdated"></i>
     </p>
   </div>
@@ -101,7 +101,7 @@ export default {
         })
         .catch((error) => {
           console.error("Error fetching counter from server:", error);
-          counter.value = "216"; // Fallback value
+          counter.value = "336"; // Fallback value
         });
 
       // Increment counter if 24 hours have passed
