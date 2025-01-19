@@ -72,6 +72,14 @@
               'Bharat-YT-Playlist Length is a robust application that allows users to analyze and extract details from YouTube playlists. It calculates the length of multiple playlist, its\'s average duration, it\'s length with different playback speed, and more. Built with React for the frontend and Material-UI for styling, the app features a clean and responsive interface. It includes functionality for fetching playlist snippets and content details using Axios, efficient handling of API errors, and dark mode support. The app also leverages regular expressions for playlist ID extraction and provides a visually engaging user experience. It also has Dark Mode.',
           },
           {
+          title: "Bharat YT-Comment-Analyzer",
+          description: "A YouTube comment analyzer built with NEXT.js, Node.js, Axios, Gemini AI and Material-UI.",
+          image: "/projects-logo/YT-comment-analyzer.png", 
+          link: "https://bharat-yt-comment-analyzer.onrender.com/",
+          github: "https://github.com/SanskarJaiswal2904/Bharat-YT-Comment-Analyzer",
+          details: "Bharat-YT-Comment-Analyzer is an advanced tool that empowers users to analyze and extract YouTube video comments. It processes comment data based on various prompt lengths (small, medium, or large). The application boasts a sleek, responsive UI built with NEXT.js and Material-UI, offering a seamless dark mode experience. With the help of Gemini AI, the app delivers smarter analysis and categorization of comments. Axios is used for efficient API communication, while robust error handling ensures reliability. Additionally, the app allows users to easily copy video details to the clipboard and directly view the video on YouTube. The flexibility to analyze comments in different lengths and the use of regular expressions for extracting video IDs further enhance its functionality."
+        },
+          {
           title: 'Low Level Design',
           description: 'A collection of Java-based Object-Oriented Programming projects.',
           image: '/projects-logo/LLD-logo.png', 
@@ -106,7 +114,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .github-link:hover {
