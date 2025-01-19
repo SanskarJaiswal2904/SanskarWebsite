@@ -8,7 +8,7 @@
               <i class="fas fa-angle-double-up"></i>
           </button>
       </div>
-        <div class="footer-logo">© 2024 by Sanskar Jaiswal</div>
+        <div class="footer-logo"> © {{new Date().getFullYear()}}  by Sanskar Jaiswal</div>
         <div class="footer-links">
           <router-link to="/" title="Home" target="_main" style="font-weight: bold;">Home</router-link>
           <a href="javascript:void(0);" @click="showWarning">
