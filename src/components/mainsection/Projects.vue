@@ -75,7 +75,7 @@
           title: "Bharat YT-Comment-Analyzer",
           description: "A YouTube comment analyzer built with NEXT.js, Node.js, Axios, Gemini AI and Material-UI.",
           image: "/projects-logo/YT-comment-analyzer.png", 
-          link: "https://bharat-yt-comment-analyzer.onrender.com/",
+          link: "https://bharat-yt-comment-analyzer.vercel.app/",
           github: "https://github.com/SanskarJaiswal2904/Bharat-YT-Comment-Analyzer",
           details: "Bharat-YT-Comment-Analyzer is an advanced tool that empowers users to analyze and extract YouTube video comments. It processes comment data based on various prompt lengths (small, medium, or large). The application boasts a sleek, responsive UI built with NEXT.js and Material-UI, offering a seamless dark mode experience. With the help of Gemini AI, the app delivers smarter analysis and categorization of comments. Axios is used for efficient API communication, while robust error handling ensures reliability. Additionally, the app allows users to easily copy video details to the clipboard and directly view the video on YouTube. The flexibility to analyze comments in different lengths and the use of regular expressions for extracting video IDs further enhance its functionality."
         },
