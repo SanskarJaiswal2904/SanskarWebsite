@@ -73,7 +73,7 @@
           },
           {
           title: "Bharat YT-Comment-Analyzer",
-          description: "A YouTube comment analyzer built with NEXT.js, Node.js, Axios, Gemini AI and Material-UI.",
+          description: "A YouTube comment analyzer built with NEXT.js, YouTube API, Node.js, Axios, Gemini AI and Material-UI.",
           image: "/projects-logo/YT-comment-analyzer.png", 
           link: "https://bharat-yt-comment-analyzer.vercel.app/",
           github: "https://github.com/SanskarJaiswal2904/Bharat-YT-Comment-Analyzer",
