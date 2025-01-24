@@ -85,7 +85,7 @@
         image: "/projects-logo/WCALogo.png",
         link: "https://whatsapp-chat-analyzer-nine.vercel.app",
         github: "https://github.com/SanskarJaiswal2904/WhatsApp-Chat-Analyzer",
-        details: "WhatsApp Chat Analyzer is a powerful tool that enables users to upload and analyze exported WhatsApp chats. It provides insightful summaries and trend analyses based on AI-driven processing. Built with React.js and Material-UI, the app offers a seamless user experience, including responsive design and dark mode. Gemini AI ensures smarter data analysis, while robust backend logic with Node.js and Axios handles efficient processing and error management. The app supports custom prompts for tailored analyses and ensures reliability with retry mechanisms and chunked data processing."
+        details: "WhatsApp Chat Analyzer is a powerful tool that enables users to upload and analyze exported WhatsApp chats. It provides insightful summaries and trend analyses based on AI-driven processing. Built with React.js and Material-UI, the app offers a seamless user experience, including responsive design and dark mode. You can download results as pdf. Gemini AI ensures smarter data analysis, while robust backend logic with Node.js and Axios handles efficient processing and error management. The app supports custom prompts for tailored analyses and ensures reliability with retry mechanisms and chunked data processing."
       },
 
           {
