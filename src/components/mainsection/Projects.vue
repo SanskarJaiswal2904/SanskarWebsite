@@ -79,6 +79,15 @@
           github: "https://github.com/SanskarJaiswal2904/Bharat-YT-Comment-Analyzer",
           details: "Bharat-YT-Comment-Analyzer is an advanced tool that empowers users to analyze and extract YouTube video comments. It processes comment data based on various prompt lengths (small, medium, or large). The application boasts a sleek, responsive UI built with NEXT.js and Material-UI, offering a seamless dark mode experience. With the help of Gemini AI, the app delivers smarter analysis and categorization of comments. Axios is used for efficient API communication, while robust error handling ensures reliability. Additionally, the app allows users to easily copy video details to the clipboard and directly view the video on YouTube. The flexibility to analyze comments in different lengths and the use of regular expressions for extracting video IDs further enhance its functionality."
         },
+        {
+        title: "WhatsApp Chat Analyzer",
+        description: "An intuitive WhatsApp chat analyzer built with React.js, Material-UI, Node.js, Axios, and Gemini AI.",
+        image: "/projects-logo/WCALogo.png",
+        link: "https://whatsapp-chat-analyzer-nine.vercel.app",
+        github: "https://github.com/SanskarJaiswal2904/WhatsApp-Chat-Analyzer",
+        details: "WhatsApp Chat Analyzer is a powerful tool that enables users to upload and analyze exported WhatsApp chats. It provides insightful summaries and trend analyses based on AI-driven processing. Built with React.js and Material-UI, the app offers a seamless user experience, including responsive design and dark mode. Gemini AI ensures smarter data analysis, while robust backend logic with Node.js and Axios handles efficient processing and error management. The app supports custom prompts for tailored analyses and ensures reliability with retry mechanisms and chunked data processing."
+      },
+
           {
           title: 'Low Level Design',
           description: 'A collection of Java-based Object-Oriented Programming projects.',
