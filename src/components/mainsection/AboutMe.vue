@@ -4,9 +4,9 @@
           <img id="gif-image" src="../../assets/flowers3.gif" style="display: block; margin: auto; height: 320px; margin-top: 40px">
             <h1 style="margin-top: 80px">HELLO</h1>
             <div class="container image-container">
-              <img src="../../assets/sanskar4.png" class="responsive-image" alt="author.png" />
+              <img src="/sanskar4.png" class="responsive-image" alt="author.png" />
               <div class="vertical-line"></div>
-              <img src="../../assets/sanskarIntro.jpeg" class="responsive-image" alt="author.png" />
+              <img src="/sanskarIntro.jpeg" class="responsive-image" alt="author.png" />
             </div>
           </div>
           
@@ -24,7 +24,8 @@
   });
   </script>
 
-  <style scoped>
+
+<style scoped>
 
   .responsive-image {
     width: 460px; /* Default for desktop */
