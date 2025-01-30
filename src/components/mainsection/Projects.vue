@@ -61,8 +61,8 @@
           github: 'https://github.com/SanskarJaiswal2904/To-DO-Pal-new',
           details:
             'To-Do Pal is a comprehensive task management application combining Flask for backend development, MongoDB for database handling, and Vue.js for the frontend. It supports secure user authentication, full CRUD operations for tasks, and an intuitive interface powered by Pinia state management and Vue Router. The app also includes an admin panel for account management.',
-          },
-          {
+        },
+        {
             title: 'Bharat-YT-Playlist Length',
             description: 'A YouTube playlist analyzer built with React, Node.js, YouTube API and Material-UI.',
             image: '/projects-logo/YTPlaylist-len.png', 
@@ -70,8 +70,8 @@
             github: 'https://github.com/SanskarJaiswal2904/Bharat-YT-Playlist-Length',
             details:
               'Bharat-YT-Playlist Length is a robust application that allows users to analyze and extract details from YouTube playlists. It calculates the length of multiple playlist, its\'s average duration, it\'s length with different playback speed, and more. Built with React for the frontend and Material-UI for styling, the app features a clean and responsive interface. It includes functionality for fetching playlist snippets and content details using Axios, efficient handling of API errors, and dark mode support. The app also leverages regular expressions for playlist ID extraction and provides a visually engaging user experience. It also has Dark Mode.',
-          },
-          {
+        },
+        {
           title: "Bharat YT-Comment-Analyzer",
           description: "A YouTube comment analyzer built with NEXT.js, YouTube API, Node.js, Axios, Gemini AI and Material-UI.",
           image: "/projects-logo/YT-comment-analyzer.png", 
@@ -86,9 +86,16 @@
         link: "https://whatsapp-chat-analyzer-nine.vercel.app",
         github: "https://github.com/SanskarJaiswal2904/WhatsApp-Chat-Analyzer",
         details: "WhatsApp Chat Analyzer is a powerful tool that enables users to upload and analyze exported WhatsApp chats. It provides insightful summaries and trend analyses based on AI-driven processing. Built with React.js and Material-UI, the app offers a seamless user experience, including responsive design and dark mode. You can download results as pdf. Gemini AI ensures smarter data analysis, while robust backend logic with Node.js and Axios handles efficient processing and error management. The app supports custom prompts for tailored analyses and ensures reliability with retry mechanisms and chunked data processing."
-      },
-
-          {
+        },
+        {
+          title: "IndiaHoliday",
+          description: "A simple Node.js package to fetch and display Indian holidays for any given date.",
+          image: "/projects-logo/npm-logo.png",
+          link: "https://www.npmjs.com/package/india-holiday-1.0",
+          github: "https://github.com/SanskarJaiswal2904/IndiaHoliday-npmPackage",
+          details: "IndiaHoliday is a lightweight Node.js package designed to help developers retrieve and display Indian holidays for a given year. It simplifies the process of holiday lookup by providing an intuitive API that returns holiday names, dates, and types. This package is perfect for any application that requires holiday data in India, including apps that need to manage holiday-based functionalities. The package uses efficient algorithms to fetch holiday data, making it easy to integrate into your projects. You can also add functionality to have Holiday but in India's Flag Tricolor."
+        },
+        {
           title: 'Low Level Design',
           description: 'A collection of Java-based Object-Oriented Programming projects.',
           image: '/projects-logo/LLD-logo.png', 
@@ -96,7 +103,7 @@
           github: 'https://github.com/SanskarJaiswal2904/Low-Level-Design',
           details:
             'This repository features a series of low-level design implementations for various real-world systems. Each project is built with core OOP principles like encapsulation, inheritance, and polymorphism, demonstrating modular and scalable design patterns. Technologies used include Java, with a focus on clean architecture and SOLID principles. \nProjects: Chess, Elevator, HotelManagementSystem, LoggingFramework, MovieTicketSystem, ParkingLot, RateLimiter, SnakeAndLadder, Splitwise, TicTacToe, VendingMachine, GameArcade.',
-          },
+        },
 
       ];
   
