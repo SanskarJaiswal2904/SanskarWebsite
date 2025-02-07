@@ -85,7 +85,15 @@
         image: "/projects-logo/WCALogo.png",
         link: "https://whatsapp-chat-analyzer-nine.vercel.app",
         github: "https://github.com/SanskarJaiswal2904/WhatsApp-Chat-Analyzer",
-        details: "WhatsApp Chat Analyzer is a powerful tool that enables users to upload and analyze exported WhatsApp chats. It provides insightful summaries and trend analyses based on AI-driven processing. Built with React.js and Material-UI, the app offers a seamless user experience, including responsive design and dark mode. You can download results as pdf. Gemini AI ensures smarter data analysis, while robust backend logic with Node.js and Axios handles efficient processing and error management. The app supports custom prompts for tailored analyses and ensures reliability with retry mechanisms and chunked data processing."
+        details: "WhatsApp Chat Analyzer is a powerful tool that enables users to upload and analyze exported WhatsApp chats. User can set precision. It provides insightful summaries and trend analyses based on AI-driven processing. Built with React.js and Material-UI, the app offers a seamless user experience, including responsive design and dark mode. You can download results as pdf. Gemini AI ensures smarter data analysis, while robust backend logic with Node.js and Axios handles efficient processing and error management. The app supports custom prompts for tailored analyses and ensures reliability with retry mechanisms and chunked data processing."
+        },
+        {
+          title: "AskMyPDF",
+          description: "An AI-powered PDF analyzer built with React.js, Material-UI, Node.js, Axios, and Gemini AI.",
+          image: "/projects-logo/AskMyPDF-PNG.png",
+          link: "https://ask-my-pdf-brown.vercel.app/",
+          github: "https://github.com/SanskarJaiswal2904/AskMyPDF",
+          details: "AskMyPDF is an advanced document analysis tool that allows users to upload PDF files and extract key insights using AI. It supports dark mode. With an intuitive React.js and Material-UI interface, users can ask questions directly from the uploaded document and receive instant responses. The app features text extraction, metadata retrieval, and intelligent compression. Powered by Gemini AI, it delivers accurate answers and document summaries. A robust backend with Node.js and Axios ensures efficient file processing, chunked data handling, and API rate management. Users can also download results for offline access."
         },
         {
           title: "IndiaHoliday",
