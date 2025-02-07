@@ -93,7 +93,7 @@
           image: "/projects-logo/AskMyPDF-PNG.png",
           link: "https://ask-my-pdf-brown.vercel.app/",
           github: "https://github.com/SanskarJaiswal2904/AskMyPDF",
-          details: "AskMyPDF is an advanced document analysis tool that allows users to upload PDF files and extract key insights using AI. It supports dark mode. With an intuitive React.js and Material-UI interface, users can ask questions directly from the uploaded document and receive instant responses. The app features text extraction, metadata retrieval, and intelligent compression. Powered by Gemini AI, it delivers accurate answers and document summaries. A robust backend with Node.js and Axios ensures efficient file processing, chunked data handling, and API rate management. Users can also download results for offline access."
+          details: "AskMyPDF is an advanced document analysis tool that allows users to upload PDF files and extract key insights using AI. Ask any question you want. It supports dark mode. With an intuitive React.js and Material-UI interface, users can ask questions directly from the uploaded document and receive instant responses. The app features text extraction, metadata retrieval, and intelligent compression. Powered by Gemini AI, it delivers accurate answers and document summaries. A robust backend with Node.js and Axios ensures efficient file processing, chunked data handling, and API rate management. Users can also download results for offline access."
         },
         {
           title: "IndiaHoliday",
