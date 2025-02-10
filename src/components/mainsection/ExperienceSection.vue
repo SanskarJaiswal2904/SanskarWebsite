@@ -121,7 +121,7 @@ const experience = ref([
 }
 
 .details {
-  font-size: 15px;
+  font-size: 12px;
   margin-top: 10px;
   color: #555;
   font-style: italic;
