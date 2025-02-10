@@ -76,7 +76,7 @@ export default defineComponent({
     height: 450px;
   }
   .image-container {
-    margin-top: 94px;
+    margin-top: 90px;
   }  
 }
 
@@ -86,7 +86,7 @@ export default defineComponent({
     height: 250px;
   }
   .image-container {
-    margin-top: 98px;
+    margin-top: 95px;
   }  
 }
 </style>
