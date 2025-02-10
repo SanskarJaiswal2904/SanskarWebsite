@@ -44,7 +44,7 @@ export default defineComponent({
     height: 300px;
   }
   .image-container {
-    margin-top: 85px;
+    margin-top: 10px;
   }  
 }
 
@@ -54,7 +54,7 @@ export default defineComponent({
     height: 680px;
   }
   .image-container {
-    margin-top: 85px;
+    margin-top: 10px;
   }  
 }
 
@@ -64,7 +64,7 @@ export default defineComponent({
     height: 650px;
   }
   .image-container {
-    margin-top: 90px;
+    margin-top: 10px;
   }  
 
 }
@@ -76,7 +76,7 @@ export default defineComponent({
     height: 450px;
   }
   .image-container {
-    margin-top: 90px;
+    margin-top: 10px;
   }  
 }
 
@@ -86,7 +86,7 @@ export default defineComponent({
     height: 250px;
   }
   .image-container {
-    margin-top: 95px;
+    margin-top: 10px;
   }  
 }
 </style>
