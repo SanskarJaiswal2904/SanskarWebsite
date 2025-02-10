@@ -87,7 +87,6 @@ header{
   justify-content: flex-end;
   align-items: center;
   background: linear-gradient(180deg, #1e90ff, #00bfff, #87cefa); /* More intense gradient */
-  position: fixed;
   top: 0;
   width: 100vw;
   margin-bottom: 10px;

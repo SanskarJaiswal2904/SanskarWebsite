@@ -26,7 +26,6 @@ export default defineComponent({
 
 <style scoped>
 .image-container {
-  margin-top: 80px;
   width: 100%;
   height: 100%;
   background-position: center;

@@ -48,12 +48,12 @@ export default defineComponent({
     HomeIntro,
     FixedSidebar,
     AboutMe,
-    ExperienceSection,
-    EducationSection,
     ProjectsSection,
     CertificateSection,
     Feedback,
     ContactMe,
+    ExperienceSection,
+    EducationSection,
   },
   setup() {
     const fixedSidebar = ref(null);
@@ -91,7 +91,7 @@ export default defineComponent({
       animateOnScroll(contactMe.value);
     });
 
-    return { fixedSidebar, homeIntro, aboutMe, projectsSection, feedback, contactMe };
+    return { fixedSidebar, homeIntro, aboutMe, projectsSection, feedback, contactMe, educationSection, certificateSection, experienceSection };
   },
 });
 </script>

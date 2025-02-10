@@ -1,7 +1,3 @@
-
-
-
-
 <template>
   <div class="certificate-gallery">
     <div class="aboutAuthor" style="margin-top: 50px; margin-bottom: 5px;">
