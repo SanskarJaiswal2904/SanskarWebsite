@@ -17,6 +17,7 @@ export default {
     return {
       certificates: [
         'AndroidOreoUdemy.jpg',
+        'MERNFullStackUdemy.jpg',
         'CPPScaler.png',
         'GitHubAllison.png',
         'JavaScaler.png',
