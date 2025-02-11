@@ -22,6 +22,7 @@ export default {
         'GitHubAllison.png',
         'JavaScaler.png',
         'OOPScaler.png',
+        'VuejsDevloper.png',
         'RestAPIIntermediateHackerRank.jpg',
         'SQLBasicHackerRank.jpg',
         'SQLIntermediateHackerRank.jpg',
