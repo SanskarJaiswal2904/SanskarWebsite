@@ -36,7 +36,7 @@
 
       </div>
       <div class="icon-holder">
-      <p>This website is built with  :  </p>
+      <p>This website is built with  </p>
     <div class="icons">
       <div style="display: flex; align-items: center; gap: 20px;">
         <i class="fa-brands fa-html5" title="HTML5" style="color: #E34F26; margin-left: 20px;"></i>
@@ -183,7 +183,7 @@ export default {
 
   .icon-holder{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: auto;
