@@ -39,7 +39,7 @@
           >
 
           <a
-          href="https://drive.google.com/file/d/1HRRRMrEDwolQUaW5YUm7rNjcCFyq1jbM/view"
+          href="https://drive.google.com/file/d/1RxgvcL_Rx6KqZumZ5CJ6xK27ktEO55IL/view?usp=sharing"
           class=" big-button glow-without-hover"
           target="_main"
         >
